@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Documentatie</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "JetBrains Mono", monospace;
+      background: #000000;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #cfff04;
+      nav-right: 40px;
+      border-radius: 40px;
+      margin: 15px;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nav-item {
+      position: relative;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover {
+      color: #E79E3D;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px 18px;
+      width: 120px;
+      border-radius: 30px;
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+
+      background: #a5232300;
+      border: 2px transparent #E79E3D;
+      z-index: 20;
+    }
+
+    .nav-item:hover .dropdown,
+    .dropdown:hover {
+      display: flex;
+    }
+
+    .dropdown a {
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+
+      background: #ffffff;
+      color: rgb(0, 0, 0);
+      border-radius: 50px;
+      border: 2px solid #ffffff;
+      box-shadow: 0px 4px 0px #dadada;
+      transition: 0.15s ease-in-out;
+    }
+
+    .dropdown a:hover {
+      background: #ffffff;
+      color: #cfff04;
+    }
+
+    /* BUTTONS */
+    .button {
+      padding: 12px 28px;
+      text-decoration: none;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 15px;
+      font-weight: 700;
+      background: #000000;
+      color: rgb(255, 255, 255);
+      border: 2px solid #000000;
+      border-radius: 50px;
+      box-shadow: 0px 6px 0px #1b1b1b;
+      transition: 0.15s ease-in-out;
+    }
+
+    .button:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .button:active {
+      transform: translateY(4px);
+      box-shadow: 0px 2px 0px #aed403;
+    }
+
+    /* PAGE CONTENT */
+    .content {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 90px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #cfff04;
+    }
+
+    /* TYPEWRITER EFFECT */
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #cfff04;
+      animation: typing 3s steps(30), blink .6s step-end infinite alternate;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      from { border-color: transparent }
+      to { border-color: #cfff04 }
+    }
+
+    /* FLEXBOX TWO-COLUMNS */
+    .two-columns-flex {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .two-columns-flex .column {
+      flex: 1;
+    }
+
+    /* Optional: responsive */
+    @media (max-width: 768px) {
+      .two-columns-flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+ <nav class="navbar">
+  <div class="nav-left"></div>
+
+  <div class="nav-menu">
+    <a href="index.html" class="button">STARTPAGINA</a>
+
+    <div class="nav-item">
+      <button class="button">WEKEN</button>
+      <div class="dropdown">
+          <a href="Week 1.html">1</a>
+          <a href="Week 2.html">2</a>
+          <a href="Week 3.html">3</a>
+          <a href="Week 4.html">4</a>
+          <a href="Week 5.html">5</a>
+          <a href="Week 6.html">6</a>
+          <a href="Week 7.html">7</a>
+      </div>
+    </div>
+
+    <button class="button">1GDM2</button>
+  </div>
+</nav>
+
+
+  <div class="content">
+    <h1 class="typewriter">WEEK 7</h1>
+    <h2 class="typewriter">INLOGSCHERMEN EN KLEINE AANPASSINGEN</h2>
+
+    <!-- Flexbox two-column layout -->
+    <div class="two-columns-flex">
+      <div class="column">
+        <p>In de zevende week merkte ik dat ik wat vooruitgelopen was op de planning. Toen ik mijn ontwerp aan de leerkracht liet zien voor feedback, kwam ik er namelijk achter dat we eigenlijk nog helemaal geen kleur hadden mogen gebruiken. Ik had inmiddels al een volledig kleurenschema toegepast, maar gelukkig bleek dit uiteindelijk geen probleem te zijn. De docent gaf aan dat het niet erg was dat ik iets te snel had gewerkt, zolang ik maar bereid was om nog enkele belangrijke details toe te voegen en mijn ontwerp op bepaalde punten te verfijnen.
+           Tijdens het gesprek werd duidelijk dat er een paar onderdelen ontbraken die essentieel waren voor de functionaliteit van de app. Ik had bijvoorbeeld nog geen knop toegevoegd waarmee gebruikers hun reizen konden opslaan. Dit was natuurlijk een belangrijke functie, omdat veel reizigers vaste trajecten hebben die ze regelmatig willen raadplegen. Daarnaast miste er ook een scherm waarin alle haltes van een treinrit duidelijk weergegeven werden. Dat scherm is voor gebruikers heel waardevol, zeker wanneer ze onderweg willen zien waar ze zich precies bevinden of willen controleren wanneer hun halte eraan komt.</P>
+
+      </div>
+      <div class="column">
+        <p>Na de feedbacksessie ben ik meteen opnieuw in Figma gedoken om alles aan te passen. Terwijl ik met de wijzigingen bezig was, merkte ik dat de nieuwe toevoegingen het ontwerp juist sterker maakten dan het daarvoor was. Het begon meer te voelen als een echte, bruikbare app in plaats van alleen een visueel ontwerp. Ook kreeg ik meer inzicht in hoe belangrijk consistentie is binnen een reeks schermen, vooral bij inlogschermen en navigatiefuncties waar duidelijkheid centraal staat. Deze week was dus niet alleen een moment van bijsturen, maar ook een waardevolle leerervaring over hoe je beter kunt anticiperen op wat gebruikers later nodig hebben.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
